@@ -1,0 +1,200 @@
+html, body{
+margin: 0 auto;
+padding: 0;
+box-sizing: border-box;
+}
+*{
+    font-family: 'Overpass', sans-serif;
+}
+body{
+    width: 1440px;
+    height: 800px;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.state{
+ width: 412px; 
+ height: 418px;  
+ background-color: hsl(216, 12%, 8%) ;
+ display: block;
+ border-radius: 20px;
+}
+p{
+    font-size: 15px;
+}
+h1{
+color: hsl(0, 0%, 100%); 
+margin-top: 45px;
+margin-left: 30px;
+text-align: start;
+}
+.desc{
+    width: 300px;
+    text-align: start;
+    margin-left: 30px;
+    margin-top: 15px;
+    color: hsl(217, 12%, 63%);
+}
+.rating{
+    margin-left: 30px;
+}
+.num{
+    display: inline-block;
+    margin: 15px 20px 20px 0px;
+    padding: 15px 20px;
+    border-radius: 100%;
+    border: none;
+    color: hsl(217, 12%, 63%);
+    background-color:  hsl(213, 19%, 18%);
+}
+.num:hover{
+    background-color: hsl(23, 97%, 53%);
+    cursor: pointer;
+}
+.num:focus{
+    background-color:hsl(216, 12%, 54%);
+}
+.icono{
+    display: block;
+    margin-top: 40px;
+    margin-left: 50px;
+    padding: 15px 15px;
+    border-radius: 80%;
+    background-color:  hsl(213, 19%, 18%);
+    margin-bottom: 0;
+
+}
+input{
+    background-color:hsl(25, 97%, 53%) ;
+    display: block;
+    padding: 10px  139px;
+    margin-top: 10px;
+    margin-left: 40px;
+    border-radius: 30px;
+    border: none;
+    color:hsl(0, 0%, 100%);
+}
+input:hover{
+   background-color:hsl(0, 0%, 100%) ; 
+   color:hsl(25, 97%, 53%);
+   cursor: pointer;
+}
+/* ThankYou */
+.Thankyou{
+    width: 412px; 
+    height: 418px;  
+    background-color: hsl(216, 12%, 8%) ;
+    display: block;
+    border-radius: 20px;
+}
+.selec{
+    width: 192px;
+    color:hsl(25, 97%, 53%);
+    padding: 2px 2px;
+    background-color: hsl(213, 19%, 18%);
+    margin-top: 25px;
+    margin-left: 100px;
+    border-radius: 20px;
+    text-align: center;
+}
+.cel{
+    display: block;
+    margin-top: 50px;
+    margin-left: 110px;
+}
+.h1-t{
+    text-align: center;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+.desc1{
+    width: 340px;
+    text-align: center;
+    color: hsl(217, 12%, 63%);
+    margin-left: 40px;
+}
+@media all and (max-width: 599px){
+body{
+    width: 375px;
+    height: 667px;
+    display: block;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.state{
+    width: 326px;
+    height: 361px;
+    display: block;
+}
+h1{
+    float: left;
+    clear: both;
+    margin-top: 15px;
+
+    }
+    .desc{
+        width: 300px;
+        text-align: start;
+        margin-left: 30px;
+        margin-top: -5px;
+        float: left;
+        clear: both;
+    
+    
+    }
+    .rating{
+        margin-left: 25px;  
+        float: left;
+        clear: both;
+        width: 300px;
+    }
+    .num{
+        padding: 10px 15px;
+        margin-right: 15px;
+        margin-top: 0;
+    
+    }
+    .icono{
+        display: block;
+        float: left;
+        margin-left: 50px;
+        margin-bottom: 0;
+    
+    }
+    input{
+        padding: 15px  120px;
+        margin-left: 20px;
+}
+/* ThankYou */
+.Thankyou{
+    width: 326px;
+    height: 361px;
+    display: block;
+}
+.selec{
+    width: 192px;
+    margin-top: 25px;
+    margin-left: 70px;
+
+}
+.cel{
+    margin-left:75px;
+    margin-top: 30px;
+ 
+}
+.h1-t{
+    margin-left: 85px;
+    margin-top: 0;
+}
+.desc1{
+    width: 300px;
+
+    margin-left: 10px;
+    clear: both;
+}
+}

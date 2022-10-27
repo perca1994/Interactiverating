@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive rating component</title>
+<link rel="stylesheet" href="style.css">
+
+
+
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <div class="state" id="estate" style="display:block;">
+  <img src="images/icon-star.svg" class="icono">
+  <h1>How did we do?</h1>
+
+  <p class="desc">Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!</p>
+
+  <div class="rating">
+     <button class="num" id="1" autofocus onclick="document.getElementById('select1').innerHTML=`You selected out 1 of 5`">1</button>
+     <button class="num" id="2"  autofocus onclick="document.getElementById('select1').innerHTML=`You selected out 2 of 5`">2</button>
+     <button class="num" id="3"  autofocus onclick="document.getElementById('select1').innerHTML=`You selected out 3 of 5`">3</button>
+     <button class="num" id="4"  autofocus onclick="document.getElementById('select1').innerHTML=`You selected out 4 of 5`">4</button>
+     <button class="num" id="5"   autofocus onclick="document.getElementById('select1').innerHTML=`You selected out 5 of 5`">5</button>
+
+  </div>
+
+  <input type="submit" value="SUBMIT" onclick="sacarState()" href="#estate"></input>
+</div>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+<div class="Thankyou" id="Thanky" style="display:none">
+  <img src="images/illustration-thank-you.svg" class="cel">
+ <div class="seleccion">
+  <p class="selec" id="select1">You selected out of 5</p>
+</div>
+  <h1 class="h1-t">Thank you!</h1>
+
+ <p class="desc1"> We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!</p>
+</div>
+  <!-- Thank you state end -->
+  <script src="rating.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
