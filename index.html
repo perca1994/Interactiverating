@@ -18,13 +18,13 @@
 
   <!-- Rating state start -->
   <div class="state" id="estate" style="display:block;">
-  <img src="images/icon-star.svg" class="icono" alt="estrella">
-  <h1>How did we do?</h1>
+  <img src="images/icon-star.svg" class="icono" alt="estrella" role="icono">
+  <h1 role="Titulo">How did we do?</h1>
 
-  <p class="desc">Please let us know how we did with your support request. All feedback is appreciated 
+  <p class="desc" role="peticion">Please let us know how we did with your support request. All feedback is appreciated 
   to help us improve our offering!</p>
 
-  <div class="rating">
+  <div class="rating" role="botones-seleccion">
      <button class="num" id="1" autofocus onclick="document.getElementById('select1').innerHTML=`You selected out 1 of 5`">1</button>
      <button class="num" id="2"  autofocus onclick="document.getElementById('select1').innerHTML=`You selected out 2 of 5`">2</button>
      <button class="num" id="3"  autofocus onclick="document.getElementById('select1').innerHTML=`You selected out 3 of 5`">3</button>
@@ -33,20 +33,20 @@
 
   </div>
 
-  <input type="submit" value="SUBMIT" onclick="sacarState()" href="#estate"></input>
+  <input type="submit" value="SUBMIT" onclick="sacarState()" href="#estate" role="enviar"></input>
 </div>
 
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
-<div class="Thankyou" id="Thanky" style="display:none">
-  <img src="images/illustration-thank-you.svg" class="cel" alt="telefono">
+<div class="Thankyou" id="Thanky" style="display:none" role="contenedor">
+  <img src="images/illustration-thank-you.svg" class="cel" alt="telefono" role="imagen-ref">
  <div class="seleccion">
-  <p class="selec" id="select1">You selected out of 5</p>
+  <p class="selec" id="select1" role="resultado-seleccion">You selected out of 5</p>
 </div>
-  <h1 class="h1-t">Thank you!</h1>
+  <h1 class="h1-t" role="titulo-thank">Thank you!</h1>
 
- <p class="desc1"> We appreciate you taking the time to give a rating. If you ever need more support, 
+ <p class="desc1" role="textresultado"> We appreciate you taking the time to give a rating. If you ever need more support, 
   don’t hesitate to get in touch!</p>
 </div>
   <!-- Thank you state end -->
